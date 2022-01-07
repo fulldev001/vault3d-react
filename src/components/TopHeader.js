@@ -40,6 +40,35 @@ const navigation = {
     //   ),
     // },
   ],
+  social_mobile: [
+    {
+      name: 'Twitter',
+      href: 'https://twitter.com/vault3d',
+      icon: (props) => (
+        <div className="text-white text-3xl p-2">
+          <Icon icon="akar-icons:twitter-fill" />
+        </div>
+      ),
+    },
+    {
+      name: 'Telegram',
+      href: 'https://t.me/VAULT3D',
+      icon: (props) => (
+        <div className="text-white text-3xl p-2">
+          <Icon icon="file-icons:telegram" />
+        </div>
+      ),
+    },
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/getvault3d/',
+      icon: (props) => (
+        <div className="text-white text-3xl p-2">
+          <Icon icon="il:instagram" />
+        </div>
+      ),
+    },
+  ],
 };
 
 const mainnavigation = [
@@ -63,13 +92,13 @@ export default function TopHeader() {
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-3 lg:px-5 xl:px-15 2xl:px-20">
-            <div className="md:flex lg:flex md:justify-between lg:justify-between pt-0 sm:pt-0 lg:pt-10">
+            <div className="lg:flex md:justify-between lg:justify-between pt-0 sm:pt-0 lg:pt-10">
               <div className="flex justify-between md:justify-items-start lg:justify-items-start">
 
                 <div className="flex-shrink-0 flex items-center">
                   <Logo />
                 </div>
-                <div className="ml-2 mr-2 flex items-center md:hidden">
+                <div className="ml-2 mr-2 flex items-center lg:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -80,7 +109,7 @@ export default function TopHeader() {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+                <div className="hidden lg:ml-6 lg:flex lg:items-center lg:space-x-4">
                   {mainnavigation.map((item) => (
                     <a
                       key={item.name}
@@ -93,7 +122,7 @@ export default function TopHeader() {
                   ))}
                 </div>
               </div>
-              <div className="items-center hidden md:flex lg:flex">
+              <div className="items-center md:flex lg:flex">
                 <div className="flex-shrink-0 flex">
                   <div className="flex items-center">
                     {navigation.social.map((item) => (
@@ -126,8 +155,8 @@ export default function TopHeader() {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <Disclosure.Panel className="lg:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 h-screen">
               {secondnavigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -137,13 +166,25 @@ export default function TopHeader() {
                     item.current
                       ? 'bg-indigo-800 text-white'
                       : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    'block px-3 py-2 rounded-md text-2xl font-medium text-center text-white'
                   }
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <div class='text-center mx-auto'>
+                {navigation.social_mobile.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="rounded-full mt-8 px-2 font-semibold inline-block text-white "
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="h-8 w-8 text-white" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
             </div>
           </Disclosure.Panel>
         </>

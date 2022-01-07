@@ -56,7 +56,7 @@ export default function PanelBlock() {
             </div>
           </div>
         </div>
-        <div className="flex items-end justify-items-end mt-10 lg:mt-0 md:mt-0">
+        <div className="flex justify-end mt-10 lg:mt-0 md:mt-0">
           <div className="md:w-full md:ml-20 lg:w-4/5 ml-auto text-right md:text-right lg:text-right">
             <div className="md:px-6 lg:px-6 py-4">
               <MotionInView variants={varFadeInDown}>
