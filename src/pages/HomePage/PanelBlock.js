@@ -24,7 +24,7 @@ export default function PanelBlock() {
         </MotionInView>
 
         <div className="flex items-end justify-items-end">
-          <div className="md:w-5/6 lg:w-4/5 text-left">
+          <div className="md:w-full md:mr-20 lg:w-4/5 text-left">
             <div className="md:px-6 lg:px-6 py-4">
               <MotionInView variants={varFadeInDown}>
                 <div className="mb-10 md:ml-0 lg:ml-20 text-3xl text-themePrimary-500 text-center md:text-left lg:text-left font-extrabold uppercase">
@@ -44,7 +44,7 @@ export default function PanelBlock() {
                 </MotionInView>
                 <MotionInView variants={varFadeInRight}>
                   <div className="static">
-                    <p className="text-white text-left lg:text-[26px] md:text-md ">
+                    <p className="text-white text-left lg:text-[26px] md:text-lg ">
                       Creators deserve the ease and simplicity of a marketplace
                       that can both support their art and give them total control
                       over their NFTs. That is why VAULT3D was created, to promote
@@ -57,7 +57,7 @@ export default function PanelBlock() {
           </div>
         </div>
         <div className="flex items-end justify-items-end mt-10 lg:mt-0 md:mt-0">
-          <div className="md:w-5/6 lg:w-4/5 ml-auto text-right md:text-right lg:text-right">
+          <div className="md:w-full md:ml-20 lg:w-4/5 ml-auto text-right md:text-right lg:text-right">
             <div className="md:px-6 lg:px-6 py-4">
               <MotionInView variants={varFadeInDown}>
                 <div className="text-3xl text-themePrimary-500 font-extrabold uppercase mb-10 md:mr-0 lg:mr-20 text-center md:text-right lg:text-right">
@@ -78,7 +78,7 @@ export default function PanelBlock() {
                 </MotionInView> */}
                 <MotionInView variants={varFadeInLeft}>
                   <div className="static">
-                    <p className="text-white text-left lg:text-[26px] md:text-md">
+                    <p className="text-white text-left lg:text-[26px] md:text-lg">
                       VAULT3D tokenholders will not only benefit from the rewards
                       and increase of intrinsic token value, but will also enjoy
                       the benefits of extrinsic value—created by both the

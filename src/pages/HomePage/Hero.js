@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <Background className="flex bg-no-repeat">
       <HeroSection yPadding="pt-10 md:pt-20 lg:pt-20 pb-0">
-        <div className="flex md:flex-col lg:flex-row mx-10 md:mx-8 lg:mx-32 lg:mt-24">
+        <div className="flex md:flex-col lg:flex-row px-10 md:px-8 lg:px-32 lg:mt-24">
           <div className="flex flex-col lg:w-3/5 md:w-full items-stretch pt-10 pb-16 md:pb-32 lg:pb-32">
             <MotionInView variants={varFadeInLeft}>
               <h1 className="font-bold text-transparent bg-clip-text header-gradent mt-5 mr-0 md:text-[46px] lg:text-[62px]">
