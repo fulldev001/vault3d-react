@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="flex md:flex-row lg:flex-row mx-10 md:mx-32 lg:mx-32 lg:mt-24">
           <div className="flex flex-col lg:w-3/5 items-stretch pt-0 md:pt-10 lg:pt-10 pb-16 md:pb-32 lg:pb-32">
             <MotionInView variants={varFadeInLeft}>
-              <h1 className="font-bold text-transparent bg-clip-text header-gradent mt-5 md:mt-0 mr-0 lg:mt-0 text-2xl md:text-4xl lg:text-[62px] ">
+              <h1 className="font-bold text-transparent bg-clip-text header-gradent mt-5 md:mt-0 mr-0 lg:mt-0 text-2xl md:text-4xl lg:text-[62px]">
                 Reimagining NFT management through the raw power <br /> of the blockchain
               </h1>
             </MotionInView>

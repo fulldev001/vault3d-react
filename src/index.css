@@ -29,8 +29,8 @@ body {
   background-color: #141515;
   background: #040505
     url('../public/assets/images/speckled-background-full.svg');
-  background-size: cover;
-  display: inline-block;
+  background-size: initial;
+  background-position-x: center;
 }
 
 h1,
