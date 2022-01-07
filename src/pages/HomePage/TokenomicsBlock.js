@@ -10,29 +10,7 @@ import SectionDark from '../../components/SectionDark';
 import Allocations from './Allocations';
 import Distributions from './Distributions';
 
-const buyAndSellFeesData = [
-  {
-    kind: 'Liquiditiy Pool',
-    share: 0.02
-  },
-  {
-    kind: 'Marketing Development',
-    share: 0.07
-  },
-  {
-    kind: 'Whole',
-    share: 100 - 0.02 - 0.07
-  }
-];
-
 export default function TokenomicsBlock() {
-  const donutCenterRenderer = () => (
-    <span>
-      Buy and Sell Fees
-    </span>
-  );
-
-  const labelContent = (e) => e.category;
   return (
     <div id="tokenomics">
       <SectionDark
@@ -40,7 +18,7 @@ export default function TokenomicsBlock() {
       >
         <div className="container-xl mx-auto">
           <div className="rounded-[50px] md:my-0 lg:my-0 md:mx-20 lg:mx-20 bg-pink-50 bg-opacity-5 p-5">
-            <div className="max-w-7xl mx-auto pb-0 md:px-4 sm:px-6 lg:px-8">
+            <div className="container-xl mx-auto pb-0 md:px-4 sm:px-6 lg:px-8">
               <div className="mt-8 lg:mt-16 mx-auto md:px-4 lg:px-4 ">
                 <div className="text-center">
                   <MotionInView variants={varFadeInDown}>
@@ -56,7 +34,7 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInRight}>
-                    <div className="inline-block text-white text-xl items-center">
+                    <div className="inline-block text-white text-2xl items-center">
                       <p className="mb-10 align-middle">
                         The marketing wallet is rerouting the 7% marketing tax
                         into BNB instead of native $VAULT3D tokens before it hits
@@ -74,7 +52,7 @@ export default function TokenomicsBlock() {
                 <div className="grid grid-cols-1 mt-10 md:mt-31 lg:mt-32">
                   <MotionInView variants={varFadeInDown}>
                     <div className="text-center">
-                      <h1 className="text-2xl text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+                      <h1 className="text-4xl font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                         Token Distribution
                       </h1>
                     </div>
@@ -85,7 +63,7 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInDown}>
-                    <div className="inline-block text-white text-xl align-middle mt-0 md:mt-20 lg:mt-20 md:mx-20 lg:mx-20">
+                    <div className="inline-block text-white text-2xl align-middle mt-0 md:mt-20 lg:mt-20 md:mx-60 lg:mx-60">
                       <p className="mb-6 lg:mb-20 md:mb-20 align-middle">
                         Amet minim mollit non deserunt ullamco est sit aliqua
                         dolor doamet sint. Velit officia consequat duis enim velit
