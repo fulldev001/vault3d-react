@@ -29,7 +29,7 @@ body {
   background-color: #141515;
   background: #040505
     url('../public/assets/images/speckled-background-full.svg');
-  background-size: 100vw auto;
+  background-size: cover;
 }
 
 h1,
