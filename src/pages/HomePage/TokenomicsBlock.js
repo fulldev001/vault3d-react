@@ -17,12 +17,12 @@ export default function TokenomicsBlock() {
         yPadding=" bg-cover py-10 md:py-36 lg:py-36"
       >
         <div className="container-xl mx-auto">
-          <div className="rounded-[50px] md:my-0 lg:my-0 md:mx-20 lg:mx-20 bg-pink-50 bg-opacity-5 p-5">
-            <div className="container-xl mx-auto pb-0 md:px-4 sm:px-6 lg:px-8">
+          <div className="rounded-[50px] md:my-0 lg:my-0 md:mx-0 lg:mx-20 bg-pink-50 bg-opacity-5 p-5">
+            <div className="container-xl mx-auto pb-0 md:px-0 sm:px-6 lg:px-8">
               <div className="mt-8 lg:mt-16 mx-auto md:px-4 lg:px-4 ">
                 <div className="text-center">
                   <MotionInView variants={varFadeInDown}>
-                    <h1 className="text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+                    <h1 className="lg:text-[60px] md:text-[42px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                       The Vault3D Token
                     </h1>
                   </MotionInView>
@@ -34,13 +34,13 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInRight}>
-                    <div className="inline-block text-white text-2xl items-center">
+                    <div className="inline-block text-white lg:text-2xl md:text-md items-center">
                       <p className="mb-10 align-middle">
                         The marketing wallet is rerouting the 7% marketing tax
                         into BNB instead of native $VAULT3D tokens before it hits
                         the marketing wallet.
                       </p>
-                      <p className=" align-middle">
+                      <p className="align-middle">
                         This basically means that the marketing wallet is already
                         funded without having to sell any native tokens. 40% of
                         the marketing wallet will always be reserved for
@@ -63,7 +63,7 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInDown}>
-                    <div className="inline-block text-white text-2xl align-middle mt-0 md:mt-20 lg:mt-20 md:mx-10 lg:mx-60">
+                    <div className="inline-block text-white lg:text-2xl md:text-md align-middle mt-0 md:mt-20 lg:mt-20 md:mx-10 lg:mx-60">
                       <p className="mb-6 lg:mb-20 md:mb-20 align-middle">
                         Amet minim mollit non deserunt ullamco est sit aliqua
                         dolor doamet sint. Velit officia consequat duis enim velit

@@ -7,6 +7,7 @@ export default function Distributions() {
       viewBox="0 0 206.40302 86.696022"
       version="1.1"
       id="svg4704"
+      className="md:w-4/5 md:mx-auto"
     >
       <defs
         id="defs4701" />

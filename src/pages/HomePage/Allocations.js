@@ -8,6 +8,7 @@ export default function Allocations() {
       viewBox="0 0 183.47673 117.73969"
       version="1.1"
       id="svg2892"
+      className="md:w-full"
     >
       <defs
         id="defs2889">
