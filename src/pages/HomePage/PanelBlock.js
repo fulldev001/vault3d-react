@@ -17,21 +17,21 @@ export default function PanelBlock() {
       <div className="container mx-auto ">
         <MotionInView variants={varFadeInUp}>
           <div className="text-center mb-10 md:mb-20 lg:mb-20">
-            <h1 className="md:text-4xl lg:text-[56px] text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+            <h1 className="md:text-4xl lg:text-[64px] text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
               Features
             </h1>
           </div>
         </MotionInView>
 
         <div className="flex items-end justify-items-end">
-          <div className="md:w-3/5 lg:w-3/5 text-left">
+          <div className="md:w-4/5 lg:w-4/5 text-left">
             <div className="md:px-6 lg:px-6 py-4">
               <MotionInView variants={varFadeInDown}>
                 <div className="mb-10 md:ml-20 lg:ml-20 text-3xl text-themePrimary-500 text-center md:text-left lg:text-left font-extrabold uppercase">
                   For Creators
                 </div>
               </MotionInView>
-              <div className="md:flex lg:flex flex-grow md:space-x-1 lg:space-x-1">
+              <div className="md:flex lg:flex flex-grow space-x-12">
                 <MotionInView variants={varFadeInLeft}>
                   <div className="w-40 mb-4 md:mb-0 lg:mb-0">
                     <img
@@ -57,14 +57,14 @@ export default function PanelBlock() {
           </div>
         </div>
         <div className="flex items-end justify-items-end mt-10 lg:mt-0 md:mt-0">
-          <div className="md:w-3/5 lg:w-3/5 ml-auto text-right md:text-right lg:text-right">
+          <div className="md:w-4/5 lg:w-4/5 ml-auto text-right md:text-right lg:text-right">
             <div className="md:px-6 lg:px-6 py-4">
               <MotionInView variants={varFadeInDown}>
                 <div className="text-3xl text-themePrimary-500 font-extrabold uppercase mb-10 md:mr-20 lg:mr-20 text-center md:text-right lg:text-right">
                   For Holders
                 </div>
               </MotionInView>
-              <div className="lg:flex md:flex md:space-x-8 lg:space-x-8">
+              <div className="lg:flex md:flex space-x-12">
                 <MotionInView variants={varFadeInRight}>
                   <div className="lg:hidden md:hidden mb-4 lg:mb-0 md:mb-0 inline-block">
                     <img
