@@ -27,8 +27,8 @@ export default function AmbassadorsBlock() {
                     alt="member 1"
                   />
                   <div className="ml-8">
-                    <p className="text-3xl text-indigo-600 font-bold">Rich</p>
-                    <p className="text-2xl text-white">Co-Founder</p>
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
@@ -38,8 +38,8 @@ export default function AmbassadorsBlock() {
                     alt="member 1"
                   />
                   <div className="ml-8">
-                    <p className="text-3xl text-indigo-600 font-bold">Rich</p>
-                    <p className="text-2xl text-white">Co-Founder</p>
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
@@ -49,8 +49,8 @@ export default function AmbassadorsBlock() {
                     alt="member 1"
                   />
                   <div className="ml-8">
-                    <p className="text-3xl text-indigo-600 font-bold">Rich</p>
-                    <p className="text-2xl text-white">Co-Founder</p>
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
                   </div>
                 </div>
               </div>
@@ -64,8 +64,8 @@ export default function AmbassadorsBlock() {
                     alt="member 1"
                   />
                   <div className="ml-8">
-                    <p className="text-3xl text-indigo-600 font-bold">Rich</p>
-                    <p className="text-2xl text-white">Co-Founder</p>
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
@@ -75,8 +75,8 @@ export default function AmbassadorsBlock() {
                     alt="member 1"
                   />
                   <div className="ml-8  md:mr-48">
-                    <p className="text-3xl text-indigo-600 font-bold">Rich</p>
-                    <p className="text-2xl text-white">Co-Founder</p>
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
                   </div>
                 </div>
               </div>
