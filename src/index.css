@@ -26,7 +26,7 @@ html {
 body {
   font-family: 'Source Code Pro', Courier New, monospace;
   background-color: #141515;
-  background: #040505 url('../public/assets/images/speckled-background-full.svg') no-repeat;
+  background: #040505 url('../public/assets/images/speckled-background-full.svg');
   background-size: 100vw auto;
 }
 

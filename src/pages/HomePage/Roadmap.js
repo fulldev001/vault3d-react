@@ -45,7 +45,6 @@ const Q42022 = [
 export default function Roadmap() {
   return (
     <SectionDark
-      yBackground="bg-section-five-background"
       id="roadmap"
       yPadding=" bg-cover py-10 md:py-36 lg:py-36"
     >
@@ -63,11 +62,11 @@ export default function Roadmap() {
               <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
                 Q4 2021
               </h2>
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
+              <ul className="inline-block md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
                 {Q42021.map((item) => (
                   <li
                     key={item.item}
-                    className="text-white leading-[56px] text-3xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
+                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
                   >
                     {item.item}
                   </li>
@@ -81,11 +80,11 @@ export default function Roadmap() {
                 Q1 2022
               </h2>
 
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] text-left">
+              <ul className="inline-block md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] text-left">
                 {Q12022.map((item) => (
                   <li
                     key={item.item}
-                    className="text-white leading-[56px] text-3xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
+                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
                   >
                     {item.item}
                   </li>
@@ -98,11 +97,11 @@ export default function Roadmap() {
               <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
                 Q2 2022
               </h2>
-              <ul className="inline-block min-w-full md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
+              <ul className="inline-block min-w-full md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
                 {Q22022.map((item) => (
                   <li
                     key={item.item}
-                    className="text-white leading-[56px] text-3xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
+                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
                   >
                     {item.item}
                   </li>
@@ -115,11 +114,11 @@ export default function Roadmap() {
               <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
                 Q3 2022
               </h2>
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
+              <ul className="inline-block md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
                 {Q32022.map((item) => (
                   <li
                     key={item.item}
-                    className="text-white leading-[56px] text-3xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
+                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
                   >
                     {item.item}
                   </li>
@@ -134,7 +133,7 @@ export default function Roadmap() {
                 {Q42022.map((item) => (
                   <li
                     key={item.item}
-                    className="text-white leading-[56px] text-3xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
+                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
                   >
                     {item.item}
                   </li>

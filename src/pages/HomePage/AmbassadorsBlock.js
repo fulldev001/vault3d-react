@@ -7,7 +7,6 @@ export default function AmbassadorsBlock() {
     <div id="howtobuy">
       <SectionDark
         id="how-to-buy"
-        yBackground="bg-section-six-background"
         yPadding="bg-cover py-10 md:py-36 lg:py-36"
       >
         <div className="container mx-auto">

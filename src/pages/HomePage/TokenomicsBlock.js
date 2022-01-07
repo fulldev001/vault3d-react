@@ -14,7 +14,6 @@ export default function TokenomicsBlock() {
   return (
     <div id="tokenomics">
       <SectionDark
-        yBackground="bg-section-four-background"
         yPadding=" bg-cover py-10 md:py-36 lg:py-36"
       >
         <div className="container mx-auto">

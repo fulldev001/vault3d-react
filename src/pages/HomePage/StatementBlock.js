@@ -11,7 +11,6 @@ import {
 export default function StatementBlock() {
   return (
     <SectionDark
-      yBackground="bg-section-three-background"
       yPadding=" bg-cover pt-20 md:pt-36 lg:pt-36 pb-10 md:pb-36 lg:pb-36"
     >
       <div className="">

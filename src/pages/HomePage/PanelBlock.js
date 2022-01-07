@@ -12,7 +12,6 @@ export default function PanelBlock() {
   return (
     <SectionDark
       id="features"
-      yBackground="bg-section-two-background"
       yPadding="flex mx-auto py-5 bg-cover py-14 md:py-36 lg:py-36"
     >
       <div className="container mx-auto ">

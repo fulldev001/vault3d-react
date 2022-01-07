@@ -63,20 +63,19 @@ export default function Footer() {
   return (
     <SectionDark
       id="footer"
-      yBackground="bg-section-seven-background"
-      yPadding="mx-auto py-5 bg-cover"
+      yPadding="mx-auto py-5"
     >
       <footer className="" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <MotionInView variants={varFadeInDown}>
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <div className="space-y-4 xl:col-span-1">
                 <div className="flex items-center">
                   <Logo />
-                  <p className="text-2xl font-black text-white tracking-wider uppercase text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+                  <p className="text-3xl font-black text-white tracking-wider uppercase text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                     Vault3D
                   </p>
                 </div>
@@ -89,7 +88,7 @@ export default function Footer() {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-white tracking-wider uppercase hover:text-indigo-600"
+                            className="text-white text-2xl tracking-wider uppercase hover:text-indigo-600"
                           >
                             {item.name}
                           </a>
@@ -103,7 +102,7 @@ export default function Footer() {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-white tracking-wider uppercase hover:text-indigo-600"
+                            className="text-white text-2xl tracking-wider uppercase hover:text-indigo-600"
                           >
                             {item.name}
                           </a>
@@ -113,7 +112,7 @@ export default function Footer() {
                   </div>
 
                   <div className="mt-14 md:mt-0 lg:mt-0">
-                    <p className="text-white mb-4 uppercase text-lg">
+                    <p className="text-white text-2xl mb-4 pt-4 uppercase">
                       Social Media:
                     </p>
                     <div className="flex space-x-6 mb-7">
@@ -130,8 +129,9 @@ export default function Footer() {
                     </div>
                     <div className="">
                       <a href="/assets/pdf/VAULT3D-Whitepaper.pdf">
-                        <button className="text-white uppercase bottom-button-gradient hover:bg-white hover:bg-opacity-10 border-gray-100 px-7 p-3">
-                          Whitepaper
+                        <button
+                          className="text-white text-xl uppercase bottom-button-gradient hover:bg-white hover:bg-opacity-10 border-gray-100 px-7 p-3">
+                          White paper
                         </button>
                       </a>
                     </div>
@@ -142,7 +142,7 @@ export default function Footer() {
           </MotionInView>
           <MotionInView variants={varFadeInUp}>
             <div className="mt-12 border-t border-gray-200 pt-8">
-              <p className="text-xs text-gray-400 xl:text-center">
+              <p className="text-lg text-gray-400 xl:text-center">
                 &copy; Copyright {date} VAULT3D.
               </p>
             </div>

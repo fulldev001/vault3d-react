@@ -45,7 +45,6 @@ export default function FaqBlock() {
     <div id="faq">
       <SectionDark
         id="faq"
-        yBackground="bg-section-six-background"
         yPadding="flex mx-auto pt-20 pb-20 bg-cover md:pb-36 lg:pb-36 md:pt-36 lg:pt-36"
       >
         <div className="mx-auto container">
