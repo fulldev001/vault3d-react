@@ -27,7 +27,7 @@ export default function TokenomicsBlock() {
                     </h1>
                   </MotionInView>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20 items-center">
                   <MotionInView variants={varFadeInLeft}>
                     <div className="w-full md:flex lg:flex justify-center md:w-auto lg:w-auto">
                       <Allocations />
@@ -58,7 +58,7 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInUp}>
-                    <div className="mt-0 md:mt-10 lg:mt-10 text-center w-full md:w-auto lg:w-auto">
+                    <div className="mt-20 flex justify-center">
                       <Distributions />
                     </div>
                   </MotionInView>

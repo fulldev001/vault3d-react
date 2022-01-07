@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../../components/Footer';
-import SectionHero from "../../components/SectionHero";
 import TopHeader from "../../components/TopHeader";
 import AmbassadorsBlock from './AmbassadorsBlock';
 import FaqBlock from './FaqBlock';
@@ -15,10 +14,8 @@ import TokenomicsBlock from './TokenomicsBlock';
 export default function HomePage() {
   return (
     <div className="antialiased text-gray-600">
-      <SectionHero>
-        <TopHeader />
-        <Hero />
-      </SectionHero>
+      <TopHeader />
+      <Hero />
       <PanelBlock />
       <StatementBlock />
       <TokenomicsBlock />
