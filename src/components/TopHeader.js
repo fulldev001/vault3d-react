@@ -43,7 +43,6 @@ const navigation = {
 };
 
 const mainnavigation = [
-  { name: 'Vault3D', href: '#tokenomics', current: false },
   { name: 'Gallery', href: '#gallery', current: false },
   { name: 'The Vault3D Token', href: '#tokenomics', current: false },
   { name: 'Roadmap', href: '#roadmap', current: false },
@@ -66,7 +65,11 @@ export default function TopHeader() {
           <div className="mx-auto px-4 sm:px-6 lg:px-20">
             <div className="md:flex lg:flex md:justify-between lg:justify-between pt-0 sm:pt-0 lg:pt-10">
               <div className="flex justify-between md:justify-items-start lg:justify-items-start">
-                <div className="-ml-2 mr-2 flex items-center md:hidden">
+
+                <div className="flex-shrink-0 flex items-center">
+                  <Logo />
+                </div>
+                <div className="ml-2 mr-2 flex items-center md:hidden">
                   {/* Mobile menu button */}
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -76,9 +79,6 @@ export default function TopHeader() {
                       <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
-                </div>
-                <div className="flex-shrink-0 flex items-center">
-                  <Logo />
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                   {mainnavigation.map((item) => (

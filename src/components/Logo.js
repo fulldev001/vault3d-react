@@ -275,6 +275,7 @@ export default function Logo() {
             fill="url(#linear-gradient-16)"
           />
         </svg>
+        <span className="text-transparent bg-clip-text header-gradent px-3 pt-4 rounded-md uppercase text-3xl font-black">VAULT3D</span>
       </span>
     </Link>
   );
