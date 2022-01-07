@@ -17,27 +17,27 @@ export default function OurCoreTeamBlock() {
         <div className="container mx-auto">
           <div className="text-center">
             <MotionInView variants={varFadeInDown}>
-              <h1 className="md:text-4xl lg:text-[56px] text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+              <h1 className="md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                 Our core team
               </h1>
             </MotionInView>
           </div>
-          <div className="md:w-[900px] sm:w-[700px] xs:w-[500px] mx-auto">
-            <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row mt-[86px] gap-y-16">
+          <div className="container">
+            <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row mt-[86px] gap-y-32">
               <MotionInView variants={varFadeInLeft}>
                 <div>
                   <div className="flex justify-center">
                     <img
                       src="/assets/images/core_team_avatar.png"
-                      className="w-[300px] h-[300px]"
+                      className="w-[400px] h-[400px]"
                       alt="member 1"
                     />
                   </div>
 
-                  <p className="text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="text-4xl text-indigo-600 mt-10 ml-4 text-center font-bold">
                     Reza
                   </p>
-                  <p className="text-2xl text-white mb-4 ml-4 text-center">
+                  <p className="text-3xl text-white mb-4 ml-4 text-center">
                     Co-Founder, Design Lead
                   </p>
                 </div>
@@ -47,15 +47,15 @@ export default function OurCoreTeamBlock() {
                   <div className="flex justify-center">
                     <img
                       src="/assets/images/core_team_avatar.png"
-                      className="w-[300px] h-[300px]"
+                      className="w-[400px] h-[400px]"
                       alt="member 1"
                     />
                   </div>
 
-                  <p className="text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="text-4xl text-indigo-600 mt-10 ml-4 text-center font-bold">
                     Eddie
                   </p>
-                  <p className="text-2xl text-white mb-4 ml-4 text-center">
+                  <p className="text-3xl text-white mb-4 ml-4 text-center">
                     Marketing Lead
                   </p>
                 </div>
@@ -65,15 +65,15 @@ export default function OurCoreTeamBlock() {
                   <div className="flex justify-center">
                     <img
                       src="/assets/images/core_team_avatar.png"
-                      className="w-[300px] h-[300px]"
+                      className="w-[400px] h-[400px]"
                       alt="member 1"
                     />
                   </div>
 
-                  <p className="text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="text-4xl text-indigo-600 mt-10 ml-4 text-center font-bold">
                     Rich
                   </p>
-                  <p className="text-2xl text-white mb-4 ml-4 text-center">
+                  <p className="text-3xl text-white mb-4 ml-4 text-center">
                     Co-Founder
                   </p>
                 </div>
@@ -83,15 +83,15 @@ export default function OurCoreTeamBlock() {
                   <div className="flex justify-center">
                     <img
                       src="/assets/images/core_team_avatar.png"
-                      className="w-[300px] h-[300px]"
+                      className="w-[400px] h-[400px]"
                       alt="member 1"
                     />
                   </div>
 
-                  <p className="text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="text-4xl text-indigo-600 mt-10 ml-4 text-center font-bold">
                     Michael
                   </p>
-                  <p className="text-2xl text-white mb-4 ml-4 text-center">
+                  <p className="text-3xl text-white mb-4 ml-4 text-center">
                     Senior Developer
                   </p>
                 </div>
