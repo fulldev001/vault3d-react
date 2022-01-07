@@ -3,8 +3,8 @@ import React from 'react';
 export default function Allocations() {
   return (
     <svg
-      width="183.47673mm"
-      height="117.73969mm"
+      // width="183.47673mm"
+      // height="117.73969mm"
       viewBox="0 0 183.47673 117.73969"
       version="1.1"
       id="svg2892"

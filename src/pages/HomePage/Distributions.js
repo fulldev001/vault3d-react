@@ -3,7 +3,7 @@ import React from 'react';
 export default function Distributions() {
   return (
     <svg
-      width="300mm"
+      // width="300mm"
       viewBox="0 0 206.40302 86.696022"
       version="1.1"
       id="svg4704"

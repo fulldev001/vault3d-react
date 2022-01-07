@@ -63,7 +63,7 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInDown}>
-                    <div className="inline-block text-white text-2xl align-middle mt-0 md:mt-20 lg:mt-20 md:mx-60 lg:mx-60">
+                    <div className="inline-block text-white text-2xl align-middle mt-0 md:mt-20 lg:mt-20 md:mx-10 lg:mx-60">
                       <p className="mb-6 lg:mb-20 md:mb-20 align-middle">
                         Amet minim mollit non deserunt ullamco est sit aliqua
                         dolor doamet sint. Velit officia consequat duis enim velit
