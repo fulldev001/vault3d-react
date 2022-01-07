@@ -120,3 +120,31 @@ h6 {
   font-size: 60px;
   font-family: DrukWide, Trebuchet MS, sans-serif;
 }
+
+@media (min-width: 768px) {
+  .text-outline-left:after {
+    content: attr(title);
+    position: absolute;
+    top: -8px;
+    left: -12px;
+    font-weight: 100;
+    color: transparent;
+    -webkit-text-stroke: 0.3px #fff;
+    z-index: 10;
+    font-size: 46px;
+    font-family: DrukWide, Trebuchet MS, sans-serif;
+  }
+
+  .text-outline-right:after {
+    content: attr(title);
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    font-weight: 100;
+    color: transparent;
+    -webkit-text-stroke: 0.3px #fff;
+    z-index: 10;
+    font-size: 46px;
+    font-family: DrukWide, Trebuchet MS, sans-serif;
+  }
+}

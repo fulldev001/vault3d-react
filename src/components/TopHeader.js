@@ -62,7 +62,7 @@ export default function TopHeader() {
     <Disclosure as="nav" className="bg-transparent">
       {({ open }) => (
         <>
-          <div className="mx-auto px-4 sm:px-6 lg:px-20">
+          <div className="mx-auto px-2 sm:px-3 lg:px-5 xl:px-15 2xl:px-20">
             <div className="md:flex lg:flex md:justify-between lg:justify-between pt-0 sm:pt-0 lg:pt-10">
               <div className="flex justify-between md:justify-items-start lg:justify-items-start">
 

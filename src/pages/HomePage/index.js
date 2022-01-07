@@ -14,7 +14,7 @@ import TokenomicsBlock from './TokenomicsBlock';
 export default function HomePage() {
   return (
     <div className="antialiased text-gray-600">
-      <TopHeader />
+      {/* <TopHeader /> */}
       <Hero />
       <PanelBlock />
       <StatementBlock />

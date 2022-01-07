@@ -15,22 +15,22 @@ export default function StatementBlock() {
     >
       <div className="">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-0">
             <div className="">
               <MotionInView variants={varFadeInLeft}>
                 <div className="text-outline-left relative" title="SHOW IT">
-                  <h1 className="relative md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
+                  <h1 className="relative lg:text-[60px] md:text-[46px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
                     Show IT
                   </h1>
                 </div>
                 <div className="text-outline-left relative" title="TO THE WORLD!">
-                  <h1 className="relative md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
+                  <h1 className="relative md:text-[46px] lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
                     To The World!
                   </h1>
                 </div>
               </MotionInView>
               <MotionInView variants={varFadeInRight}>
-                <p className="text-2xl md:w-4/5 lg:w-4/5 text-left mt-10 text-white">
+                <p className="lg:text-2xl md:text-lg md:w-full lg:w-4/5 text-left mt-10 text-white">
                   Your originality is the strength of your NFT
                 </p>
               </MotionInView>
