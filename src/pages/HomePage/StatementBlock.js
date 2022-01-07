@@ -18,37 +18,31 @@ export default function StatementBlock() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
             <div className="">
               <MotionInView variants={varFadeInLeft}>
-                <div className="relative display-block">
-                  <div className="absolute z-10">
-                    <h1 className="md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase text-outline">
-                      Show IT <br />
-                      To The World!
-                    </h1>
-                  </div>
-                  <div className="absolute z-20 left-2 top-2">
-                    <h1 className="md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase">
-                      Show IT <br />
-                      To The World!
-                    </h1>
-                  </div>
+                <div className="text-outline relative" title="SHOW IT">
+                  <h1 className="relative md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
+                    Show IT 
+                  </h1>
+                </div>
+                <div className="text-outline relative" title="TO THE WORLD!">
+                  <h1 className="relative md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
+                    To The World!
+                  </h1>
                 </div>
               </MotionInView>
-              <div className="mt-60">
-                <MotionInView variants={varFadeInRight}>
-                  <p className="text-2xl md:w-4/5 lg:w-4/5 text-left mt-10 text-white">
-                    Your originality is the strength of your NFT
-                  </p>
+              <MotionInView variants={varFadeInRight}>
+                <p className="text-2xl md:w-4/5 lg:w-4/5 text-left mt-10 text-white">
+                  Your originality is the strength of your NFT
+                </p>
+              </MotionInView>
+              <div className="mt-20">
+                <MotionInView variants={varFadeInUp}>
+                  <img
+                    src="/assets/images/badge-small.png"
+                    alt=""
+                    width="250"
+                    height="250"
+                  />
                 </MotionInView>
-                <div className="mt-20">
-                  <MotionInView variants={varFadeInUp}>
-                    <img
-                      src="/assets/images/badge-small.png"
-                      alt=""
-                      width="250"
-                      height="250"
-                    />
-                  </MotionInView>
-                </div>
               </div>
             </div>
             <div className="text-center mt-10 md:mt-32 lg:mt-32">

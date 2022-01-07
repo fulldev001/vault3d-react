@@ -94,7 +94,15 @@ h6 {
   text-shadow: none;
 }
 
-.text-outline {
-  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
-    -1px 1px 0 #fff, 1px 1px 0 #fff;
+.text-outline:after {
+  content: attr(title);
+  position: absolute;
+  top: -8px;
+  left: -12px;
+  font-weight: 100;
+  color: transparent;
+  -webkit-text-stroke: 0.3px #fff;
+  z-index: 10;
+  font-size: 60px;
+  font-family: DrukWide, Trebuchet MS, sans-serif;
 }

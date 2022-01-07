@@ -10,20 +10,42 @@ import SectionDark from '../../components/SectionDark';
 import Allocations from './Allocations';
 import Distributions from './Distributions';
 
+const buyAndSellFeesData = [
+  {
+    kind: 'Liquiditiy Pool',
+    share: 0.02
+  },
+  {
+    kind: 'Marketing Development',
+    share: 0.07
+  },
+  {
+    kind: 'Whole',
+    share: 100 - 0.02 - 0.07
+  }
+];
+
 export default function TokenomicsBlock() {
+  const donutCenterRenderer = () => (
+    <span>
+      Buy and Sell Fees
+    </span>
+  );
+
+  const labelContent = (e) => e.category;
   return (
     <div id="tokenomics">
       <SectionDark
         yPadding=" bg-cover py-10 md:py-36 lg:py-36"
       >
-        <div className="container mx-auto">
-          <div className="rounded-3xl md:my-0 lg:my-0 md:mx-20 lg:mx-20 bg-gray-400 bg-opacity-10 p-5">
+        <div className="container-xl mx-auto">
+          <div className="rounded-[50px] md:my-0 lg:my-0 md:mx-20 lg:mx-20 bg-pink-50 bg-opacity-5 p-5">
             <div className="max-w-7xl mx-auto pb-0 md:px-4 sm:px-6 lg:px-8">
               <div className="mt-8 lg:mt-16 mx-auto md:px-4 lg:px-4 ">
                 <div className="text-center">
                   <MotionInView variants={varFadeInDown}>
-                    <h1 className="text-5xl text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
-                      The VAULT3D Token
+                    <h1 className="text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+                      The Vault3D Token
                     </h1>
                   </MotionInView>
                 </div>
