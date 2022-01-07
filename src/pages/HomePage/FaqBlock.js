@@ -50,12 +50,12 @@ export default function FaqBlock() {
         <div className="mx-auto container">
           <div className="text-left mb-10 md:mb-20 lg:mb-20">
             <MotionInView variants={varFadeInDown}>
-              <h1 className="text-[56px] text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+              <h1 className="text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                 F.A.Q
               </h1>
             </MotionInView>
             <MotionInView variants={varFadeInUp}>
-              <p className="text-white text-left text-xl">
+              <p className="text-white text-left text-2xl mt-10">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. <br />
                 Velit officia consequat duis enim velit mollit. Exercitation
@@ -80,11 +80,11 @@ export default function FaqBlock() {
                                 <img
                                   src="/assets/images/plus.png"
                                   alt="plus"
-                                  className="w-[20px] h-[20px]"
+                                  className="w-[30px] h-[30px]"
                                 />
                               )}
 
-                              <h2 className="font-medium text-3xl text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center ml-4">
+                              <h2 className="font-bold text-3xl text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center ml-4">
                                 {faq.question}
                               </h2>
                             </Disclosure.Button>
@@ -99,9 +99,9 @@ export default function FaqBlock() {
                           >
                             <Disclosure.Panel
                               as="dd"
-                              className="ml-8 mt-2 pr-12 pb-10"
+                              className="ml-12 mt-2 pr-12 pb-10"
                             >
-                              <p className="text-lg text-indigo-500">
+                              <p className="text-2xl text-indigo-500">
                                 {faq.answer}
                               </p>
                             </Disclosure.Panel>
