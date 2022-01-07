@@ -30,6 +30,7 @@ body {
   background: #040505
     url('../public/assets/images/speckled-background-full.svg');
   background-size: cover;
+  display: inline-block;
 }
 
 h1,

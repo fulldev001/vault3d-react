@@ -113,7 +113,7 @@ export default function TopHeader() {
                       type="button"
                       className="relative uppercase text-2xl inline-flex items-center px-6 sm:px-4 lg:px-14 py-2 border border-transparent shadow-sm rounded-3xl bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500 text-[#081312] font-bold"
                     >
-                      <span>Buy $VAULTED</span>
+                      <span>Buy $VAULT</span>
                     </button>
                   </a>
                   {/* <a
