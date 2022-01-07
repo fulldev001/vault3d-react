@@ -17,20 +17,22 @@ export default function HowToBuyBlock() {
         <div className="container mx-auto">
           <div className="text-center md:text-right lg:text-right">
             <MotionInView variants={varFadeInDown}>
-              <h1 className="text-5xl mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
-                How To Buy
-              </h1>
+              <div className="text-outline-right relative" title="How To Buy?">
+                <h1 className="text-[60px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
+                  How To Buy?
+                </h1>
+              </div>
             </MotionInView>
           </div>
           <div className="flex items-end justify-items-end">
-            <div className="md:w-3/5 lg:w-3/5 text-left">
+            <div className="md:w-3/5 lg:w-4/5 text-left">
               <div className="px-6 py-14">
                 <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
                   <MotionInView variants={varFadeInLeft}>
                     <div className="static mx-20 md:mx-0 lg:mx-0 md:flex lg:flex items-center">
                       <img
                         src="/assets/images/wallet-icon.png"
-                        width="330"
+                        width="430"
                         height="310"
                         alt=""
                       />
@@ -52,14 +54,14 @@ export default function HowToBuyBlock() {
             </div>
           </div>
           <div className="flex items-end justify-items-end">
-            <div className="md:w-3/5 lg:w-3/5 text-left">
+            <div className="md:w-3/5 lg:w-4/5 text-left">
               <div className="px-6 py-14">
                 <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
                   <MotionInView variants={varFadeInLeft}>
                     <div className="static mx-20 md:mx-0 lg:mx-0 md:flex lg:flex items-center">
                       <img
                         src="/assets/images/doc-icon.png"
-                        width="330"
+                        width="430"
                         height="370"
                         alt="ww"
                       />
@@ -80,14 +82,14 @@ export default function HowToBuyBlock() {
             </div>
           </div>
           <div className="flex items-end justify-items-end">
-            <div className="md:w-3/5 lg:w-3/5 text-left">
+            <div className="md:w-3/5 lg:w-4/5 text-left">
               <div className="px-6 py-14">
                 <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
                   <MotionInView variants={varFadeInLeft}>
                     <div className="static mx-20 md:mx-0 lg:mx-0 md:flex lg:flex items-center">
                       <img
                         src="/assets/images/handshake-icon.png"
-                        width="251"
+                        width="200"
                         height="220"
                         alt=""
                       />
@@ -97,8 +99,11 @@ export default function HowToBuyBlock() {
                     <MotionInView variants={varFadeInRight}>
                       <p className="text-white text-left text-2xl md:ml-10 lg:ml-10">
                         Input the amount you would like to buy, making sure
-                        $VAULTED populates into the second box. Just click to swap
-                        and you are done. Welcome to VAULT3D!
+                        $VAULTED populates into the second box.
+                      </p>
+                      <p className="text-white text-left text-2xl md:ml-10 lg:ml-10 mt-5">
+                        That's it! Just click to swap and you are done. <br />
+                        Welcome to VAULT3D!
                       </p>
                     </MotionInView>
                   </div>

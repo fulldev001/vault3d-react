@@ -18,12 +18,12 @@ export default function StatementBlock() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
             <div className="">
               <MotionInView variants={varFadeInLeft}>
-                <div className="text-outline relative" title="SHOW IT">
+                <div className="text-outline-left relative" title="SHOW IT">
                   <h1 className="relative md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
-                    Show IT 
+                    Show IT
                   </h1>
                 </div>
-                <div className="text-outline relative" title="TO THE WORLD!">
+                <div className="text-outline-left relative" title="TO THE WORLD!">
                   <h1 className="relative md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase z-20">
                     To The World!
                   </h1>
