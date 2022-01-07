@@ -34,7 +34,8 @@ export default function StatementBlock() {
                   Your originality is the strength of your NFT
                 </p>
               </MotionInView>
-              <div className="mt-20 md:hidden">
+              {/* White sphere for desktop */}
+              <div className="mt-20 md:hidden lg:block">
                 <MotionInView variants={varFadeInUp}>
                   <img
                     src="/assets/images/badge-small.png"
@@ -48,7 +49,7 @@ export default function StatementBlock() {
             <div className="md:flex md:justify-between md:items-baseline text-center mt-10 md:mt-0 lg:mt-32">
 
               {/* White sphere for tablet */}
-              <div className="mt-20 lg:hidden md:w-1/5">
+              <div className="mt-20 lg:hidden md:block md:w-1/5">
                 <MotionInView variants={varFadeInUp}>
                   <img
                     src="/assets/images/badge-small.png"
@@ -61,9 +62,9 @@ export default function StatementBlock() {
 
               {/* Space for tablet */}
               <div className="md:w-1/5 lg:hidden"></div>
-              <div className="relative md:w-3/5 ">
+              <div className="relative md:w-3/5 lg:w-full">
                 {/* Curve grid for desktop */}
-                <div className="relative w-500 h-500 overflow-hidden md:hidden">
+                <div className="relative w-500 h-500 overflow-hidden md:hidden lg:block">
                   <MotionInView variants={varFadeInUp}>
                     <img
                       src="/assets/images/gridbgright.png"
