@@ -51,96 +51,98 @@ export default function Roadmap() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left">
           <MotionInView variants={varFadeInUp}>
-            <h1 className="text-5xl mb-0 md:mb-24 lg:mb-24 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+            <h1 className="text-[60px] font-bold mb-0 md:mb-24 lg:mb-24 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
               Roadmap
             </h1>
           </MotionInView>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 divide-y-2 divide-indigo-600 gap-y-14 mx-auto">
-          <MotionInView variants={varFadeInUp}>
-            <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-              <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
-                Q4 2021
-              </h2>
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
-                {Q42021.map((item) => (
-                  <li
-                    key={item.item}
-                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
-                  >
-                    {item.item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </MotionInView>
-          <MotionInView variants={varFadeInDown}>
-            <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] md:noborder lg:noborder mx-auto">
-              <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
-                Q1 2022
-              </h2>
+        <div className="container">
+          <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row gap-y-16">
+            <MotionInView variants={varFadeInUp}>
+              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
+                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
+                  Q4 2021
+                </h2>
+                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-20">
+                  {Q42021.map((item) => (
+                    <li
+                      key={item.item}
+                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                    >
+                      <span className="pl-7">{item.item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </MotionInView>
+            <MotionInView variants={varFadeInDown}>
+              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] md:noborder lg:noborder mx-auto">
+                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
+                  Q1 2022
+                </h2>
 
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] text-left">
-                {Q12022.map((item) => (
-                  <li
-                    key={item.item}
-                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
-                  >
-                    {item.item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </MotionInView>
-          <MotionInView variants={varFadeInUp}>
-            <div className="text-center min-w-full md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-              <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
-                Q2 2022
-              </h2>
-              <ul className="inline-block min-w-full md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
-                {Q22022.map((item) => (
-                  <li
-                    key={item.item}
-                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
-                  >
-                    {item.item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </MotionInView>
-          <MotionInView variants={varFadeInDown}>
-            <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-              <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
-                Q3 2022
-              </h2>
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
-                {Q32022.map((item) => (
-                  <li
-                    key={item.item}
-                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
-                  >
-                    {item.item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </MotionInView>
-          <MotionInView variants={varFadeInUp}>
-            <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-              <h2 className="text-xl text-indigo-700 mb-4 mt-10 ml-4">Q4 2022</h2>
-              <ul className="inline-block md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
-                {Q42022.map((item) => (
-                  <li
-                    key={item.item}
-                    className="text-white leading-[56px] text-xl bg-list-icon bg-no-repeat pl-12 bg-setinconfig bg-left-center"
-                  >
-                    {item.item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </MotionInView>
+                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-20">
+                  {Q12022.map((item) => (
+                    <li
+                      key={item.item}
+                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                    >
+                      <span className="pl-7">{item.item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </MotionInView>
+            <MotionInView variants={varFadeInUp}>
+              <div className="text-center min-w-full md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
+                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
+                  Q2 2022
+                </h2>
+                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-20">
+                  {Q22022.map((item) => (
+                    <li
+                      key={item.item}
+                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                    >
+                      <span className="pl-7">{item.item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </MotionInView>
+            <MotionInView variants={varFadeInDown}>
+              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
+                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
+                  Q3 2022
+                </h2>
+                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-[10.5rem]">
+                  {Q32022.map((item) => (
+                    <li
+                      key={item.item}
+                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                    >
+                      <span className="pl-7">{item.item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </MotionInView>
+            <MotionInView variants={varFadeInUp}>
+              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
+                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">Q4 2022</h2>
+                <ul className="inline-block md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
+                  {Q42022.map((item) => (
+                    <li
+                      key={item.item}
+                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                    >
+                      <span className="pl-7">{item.item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </MotionInView>
+          </div>
         </div>
       </div>
     </SectionDark>
