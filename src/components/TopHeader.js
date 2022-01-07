@@ -85,7 +85,7 @@ export default function TopHeader() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="text-transparent bg-clip-text header-gradent hover:bg-indigo-700 hover:text-indigo-700 px-3 py-2 rounded-md uppercase text-3xl font-black"
+                      className="text-transparent bg-clip-text header-gradent hover:bg-indigo-700 hover:text-indigo-700 px-3 py-2 rounded-md uppercase md:text-xl lg:text-2xl font-black"
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
