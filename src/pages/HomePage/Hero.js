@@ -12,10 +12,10 @@ export default function Hero() {
   return (
     <Background className="flex bg-no-repeat">
       <HeroSection yPadding="pt-10 md:pt-20 lg:pt-20 pb-0">
-        <div className="flex md:flex-row lg:flex-row mx-10 md:mx-32 lg:mx-32 lg:mt-24">
-          <div className="flex flex-col lg:w-3/5 items-stretch pt-0 md:pt-10 lg:pt-10 pb-16 md:pb-32 lg:pb-32">
+        <div className="flex md:flex-col lg:flex-row mx-10 md:mx-8 lg:mx-32 lg:mt-24">
+          <div className="flex flex-col lg:w-3/5 md:w-full items-stretch pt-10 pb-16 md:pb-32 lg:pb-32">
             <MotionInView variants={varFadeInLeft}>
-              <h1 className="font-bold text-transparent bg-clip-text header-gradent mt-5 md:mt-0 mr-0 lg:mt-0 text-2xl md:text-4xl lg:text-[62px]">
+              <h1 className="font-bold text-transparent bg-clip-text header-gradent mt-5 mr-0 md:text-[46px] lg:text-[62px]">
                 Reimagining NFT management through the raw power <br /> of the blockchain
               </h1>
             </MotionInView>
@@ -42,7 +42,7 @@ export default function Hero() {
             </MotionInView>
             {/* </div> */}
           </div>
-          <div className="w-full lg:w-2/5 text-right hidden md:block lg:block">
+          <div className="w-full lg:w-2/5 text-right hidden md:flex md:justify-end lg:block">
             {/* <div className="flex justify-center items-center content-center h-full"> */}
             <MotionInView variants={varFadeInRight}>
               <img
@@ -50,6 +50,7 @@ export default function Hero() {
                 width="581"
                 height="703"
                 alt=""
+                className="lg:w-[581px] lg:h-[703px] md:w-[350px]"
               />
             </MotionInView>
             {/* </div> */}
