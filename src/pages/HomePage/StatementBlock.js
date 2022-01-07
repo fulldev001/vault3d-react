@@ -18,25 +18,37 @@ export default function StatementBlock() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
             <div className="">
               <MotionInView variants={varFadeInLeft}>
-                <h1 className="md:text-4xl lg:text-[56px] text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase">
-                  Show IT <br />
-                  To The World!
-                </h1>
+                <div className="relative display-block">
+                  <div className="absolute z-10">
+                    <h1 className="md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase text-outline">
+                      Show IT <br />
+                      To The World!
+                    </h1>
+                  </div>
+                  <div className="absolute z-20 left-2 top-2">
+                    <h1 className="md:text-4xl lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center uppercase">
+                      Show IT <br />
+                      To The World!
+                    </h1>
+                  </div>
+                </div>
               </MotionInView>
-              <MotionInView variants={varFadeInRight}>
-                <p className="text-2xl md:w-4/5 lg:w-4/5 text-left mt-10 text-white">
-                  Your originality is the strength of your NFT
-                </p>
-              </MotionInView>
-              <div className="mt-20">
-                <MotionInView variants={varFadeInUp}>
-                  <img
-                    src="/assets/images/badge-small.png"
-                    alt=""
-                    width="170"
-                    height="170"
-                  />
+              <div className="mt-60">
+                <MotionInView variants={varFadeInRight}>
+                  <p className="text-2xl md:w-4/5 lg:w-4/5 text-left mt-10 text-white">
+                    Your originality is the strength of your NFT
+                  </p>
                 </MotionInView>
+                <div className="mt-20">
+                  <MotionInView variants={varFadeInUp}>
+                    <img
+                      src="/assets/images/badge-small.png"
+                      alt=""
+                      width="250"
+                      height="250"
+                    />
+                  </MotionInView>
+                </div>
               </div>
             </div>
             <div className="text-center mt-10 md:mt-32 lg:mt-32">
@@ -46,15 +58,15 @@ export default function StatementBlock() {
                     <img
                       src="/assets/images/gridbgright.png"
                       alt=""
-                      width="500"
-                      height="500"
+                      width="900"
+                      height="600"
                     />
                   </MotionInView>
                 </div>
 
-                <div className="absolute md:py-2.5 lg:py-2.5 md:px-20 lg:px-20 top-16 md:top-28 lg:top-28 inset-x-0 text-white text-2xl text-center">
+                <div className="absolute md:py-2.5 lg:py-2.5 md:px-20 lg:px-20 top-16 md:top-28 lg:top-56 inset-x-0 text-white text-2xl text-left">
                   <MotionInView variants={varFadeInDown}>
-                    VAULT3D will make it easier than ever to create, upload,
+                    VOULT3D will make it easier than ever to create, upload,
                     price, and show off your NFTs!
                   </MotionInView>
                 </div>

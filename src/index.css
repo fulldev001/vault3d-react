@@ -8,7 +8,8 @@
   font-family: 'Source Code Pro';
   font-weight: 1 999;
   font-display: swap;
-  src: url(../public/assets/fonts/SourceCodePro-VariableFont_wght.ttf) format('truetype-variations');
+  src: url(../public/assets/fonts/SourceCodePro-VariableFont_wght.ttf)
+    format('truetype-variations');
 }
 @font-face {
   font-family: 'DrukWide';
@@ -20,22 +21,36 @@ html {
   /* background: #11151E; */
 }
 .noborder {
-  --tw-divide-opacity:0 !important;
-  border-top:0 !important;
+  --tw-divide-opacity: 0 !important;
+  border-top: 0 !important;
 }
 body {
   font-family: 'Source Code Pro', Courier New, monospace;
   background-color: #141515;
-  background: #040505 url('../public/assets/images/speckled-background-full.svg');
+  background: #040505
+    url('../public/assets/images/speckled-background-full.svg');
   background-size: 100vw auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'DrukWide', Trebuchet MS, sans-serif;
-  color:#fff;
+  color: #fff;
 }
 .header-gradent {
-  background-image: linear-gradient(135deg, #f3f0ef 0%, #999 25%, white 40%, #83959a 55%, #bfb9b5 70%, #dcd5d1 100%);
+  background-image: linear-gradient(
+    135deg,
+    #f3f0ef 0%,
+    #999 25%,
+    white 40%,
+    #83959a 55%,
+    #bfb9b5 70%,
+    #dcd5d1 100%
+  );
 }
 
 .bottom-button-gradient {
@@ -43,13 +58,16 @@ h1, h2, h3, h4, h5, h6 {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #3730a3, #d53a9d); */
   border-width: 1px;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to left, hsl(0deg 0% 100%), hsl(240deg 7% 62%));
-
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    hsl(0deg 0% 100%),
+    hsl(240deg 7% 62%)
+  );
 }
 
 .topneg {
-  top:-1px;
+  top: -1px;
 }
 
 #footer li ul,
@@ -58,9 +76,9 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 @media (orientation: portrait) {
-    body {
-        background-size: auto 100vh;
-    }
+  body {
+    background-size: auto 100vh;
+  }
 }
 
 .text-shadow {
@@ -74,4 +92,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .text-shadow-none {
   text-shadow: none;
+}
+
+.text-outline {
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
