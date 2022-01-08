@@ -17,13 +17,13 @@ export default function OurCoreTeamBlock() {
         <div className="container mx-auto">
           <div className="text-center">
             <MotionInView variants={varFadeInDown}>
-              <h1 className="md:text-[46px] lg:text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+              <h1 className="md:text-[46px] lg:text-[60px] text-[30px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                 Our core team
               </h1>
             </MotionInView>
           </div>
           <div className="container">
-            <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row mt-[86px] lg:gap-y-32 md:gap-y-16">
+            <div className="grid grid-cols-2 grid-flow-row lg:mt-[86px] md:mt-[86px] mt-[42px] lg:gap-y-32 md:gap-y-16">
               <MotionInView variants={varFadeInLeft}>
                 <div className="w-full">
                   <div className="flex justify-center">
@@ -34,11 +34,11 @@ export default function OurCoreTeamBlock() {
                     />
                   </div>
 
-                  <p className="lg:text-4xl md:text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="lg:text-4xl md:text-3xl text-lg text-indigo-600 lg:mt-10 md:mt-10 mt-2 text-center font-bold">
                     Reza
                   </p>
-                  <p className="lg:text-3xl md:text-xl text-white mb-4 ml-4 text-center">
-                    Co-Founder, Design Lead
+                  <p className="lg:text-3xl md:text-xl text-md text-white mb-4 text-center">
+                    Co-Founder Design Lead
                   </p>
                 </div>
               </MotionInView>
@@ -52,10 +52,10 @@ export default function OurCoreTeamBlock() {
                     />
                   </div>
 
-                  <p className="lg:text-4xl md:text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="lg:text-4xl md:text-3xl text-indigo-600 lg:mt-10 md:mt-10 mt-2 text-center font-bold">
                     Eddie
                   </p>
-                  <p className="lg:text-3xl md:text-xl text-white mb-4 ml-4 text-center">
+                  <p className="lg:text-3xl md:text-xl text-white mb-4 text-center">
                     Marketing Lead
                   </p>
                 </div>
@@ -70,10 +70,10 @@ export default function OurCoreTeamBlock() {
                     />
                   </div>
 
-                  <p className="lg:text-4xl md:text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="lg:text-4xl md:text-3xl text-indigo-600 lg:mt-10 md:mt-10 mt-2 text-center font-bold">
                     Rich
                   </p>
-                  <p className="lg:text-3xl md:text-xl text-white mb-4 ml-4 text-center">
+                  <p className="lg:text-3xl md:text-xl text-white mb-4 text-center">
                     Co-Founder
                   </p>
                 </div>
@@ -88,10 +88,10 @@ export default function OurCoreTeamBlock() {
                     />
                   </div>
 
-                  <p className="lg:text-4xl md:text-3xl text-indigo-600 mt-10 ml-4 text-center font-bold">
+                  <p className="lg:text-4xl md:text-3xl text-indigo-600 lg:mt-10 md:mt-10 mt-2 text-center font-bold">
                     Michael
                   </p>
-                  <p className="lg:text-3xl md:text-xl text-white mb-4 ml-4 text-center">
+                  <p className="lg:text-3xl md:text-xl text-white mb-4 text-center">
                     Senior Developer
                   </p>
                 </div>

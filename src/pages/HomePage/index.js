@@ -21,7 +21,7 @@ export default function HomePage() {
       <TokenomicsBlock />
       <Roadmap />
       <HowToBuyBlock />
-      {/* <OurCoreTeamBlock /> */}
+      <OurCoreTeamBlock />
       {/* <AmbassadorsBlock /> */}
       {/* <FaqBlock /> */}
       {/* <Footer /> */}
