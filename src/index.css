@@ -135,7 +135,7 @@ h6 {
     font-family: DrukWide, Trebuchet MS, sans-serif;
   }
 
-  .text-outline-right:after {
+  .text-outline-right-tablet:after {
     content: attr(title);
     position: absolute;
     top: -4px;
@@ -163,7 +163,7 @@ h6 {
     font-family: DrukWide, Trebuchet MS, sans-serif;
   }
 
-  .text-outline-right:after {
+  .text-outline-right-mobile:after {
     content: attr(title);
     position: absolute;
     top: -2px;

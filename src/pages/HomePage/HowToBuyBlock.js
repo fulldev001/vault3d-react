@@ -15,10 +15,29 @@ export default function HowToBuyBlock() {
         yPadding="bg-cover py-10 md:py-36 lg:py-36"
       >
         <div className="container mx-auto">
-          <div className="text-center md:text-right lg:text-right">
-            <MotionInView variants={varFadeInDown}>
+          <div className="text-right md:text-right lg:text-right">
+            {/* Desktop */}
+            <MotionInView variants={varFadeInDown} className="hidden md:hidden lg:block">
               <div className="text-outline-right relative" title="How To Buy?">
-                <h1 className="lg:text-[60px] md:text-[46px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
+                <h1 className="lg:text-[60px] md:text-[46px] text-[28px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
+                  How To Buy?
+                </h1>
+              </div>
+            </MotionInView>
+
+            {/* Tablet */}
+            <MotionInView variants={varFadeInDown} className="hidden md:block lg:hidden">
+              <div className="text-outline-right-tablet relative" title="How To Buy?">
+                <h1 className="lg:text-[60px] md:text-[46px] text-[28px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
+                  How To Buy?
+                </h1>
+              </div>
+            </MotionInView>
+
+            {/* Mobile */}
+            <MotionInView variants={varFadeInDown} className="block md:hidden lg:hidden">
+              <div className="text-outline-right-mobile relative" title="How To Buy?">
+                <h1 className="lg:text-[60px] md:text-[46px] text-[28px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
                   How To Buy?
                 </h1>
               </div>
@@ -26,10 +45,10 @@ export default function HowToBuyBlock() {
           </div>
           <div className="flex items-end justify-items-end">
             <div className="md:w-full lg:w-4/5 text-left">
-              <div className="px-6 py-14">
-                <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
+              <div className="lg:px-6 lg:py-14 md:px-6 md:py-14">
+                <div className="flex space-x-8">
                   <MotionInView variants={varFadeInLeft}>
-                    <div className="static mx-20 md:mx-0 lg:mx-0 md:flex lg:flex items-center">
+                    <div className="static mx-0 md:flex lg:flex items-center">
                       <img
                         src="/assets/images/wallet-icon.png"
                         width="430"
@@ -39,7 +58,7 @@ export default function HowToBuyBlock() {
                     </div>
                   </MotionInView>
 
-                  <div className="static mt-10 md:mt-0 lg:mt-0">
+                  <div className="static">
                     <MotionInView variants={varFadeInRight}>
                       <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10">
                         Connect wallet to PancakeSwap, PinkSale, PooCoin, or your
@@ -55,10 +74,10 @@ export default function HowToBuyBlock() {
           </div>
           <div className="flex items-end justify-items-end">
             <div className="md:w-full lg:w-4/5 text-left">
-              <div className="px-6 py-14">
-                <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
+              <div className="lg:px-6 lg:py-14 md:px-6 md:py-14 py-8">
+                <div className="flex space-x-8">
                   <MotionInView variants={varFadeInLeft}>
-                    <div className="static mx-20 md:mx-0 lg:mx-0 md:flex lg:flex items-center">
+                    <div className="static mx-0 md:flex lg:flex items-center">
                       <img
                         src="/assets/images/doc-icon.png"
                         width="430"
@@ -67,7 +86,7 @@ export default function HowToBuyBlock() {
                       />
                     </div>
                   </MotionInView>
-                  <div className="static mt-10 md:mt-0 lg:mt-0">
+                  <div className="static">
                     <MotionInView variants={varFadeInRight}>
                       <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10">
                         Add (import) or look up the $VAULTED contract address in
@@ -83,10 +102,10 @@ export default function HowToBuyBlock() {
           </div>
           <div className="flex items-end justify-items-end">
             <div className="md:w-full lg:w-4/5 text-left">
-              <div className="px-6 py-14">
-                <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
+              <div className="lg:px-6 lg:py-14 md:px-6 md:py-14 py-4">
+                <div className="flex space-x-8">
                   <MotionInView variants={varFadeInLeft}>
-                    <div className="static mx-20 md:mx-0 lg:mx-0 md:flex lg:flex items-center">
+                    <div className="static mx-0 md:flex lg:flex items-center">
                       <img
                         src="/assets/images/handshake-icon.png"
                         width="200"
@@ -95,7 +114,7 @@ export default function HowToBuyBlock() {
                       />
                     </div>
                   </MotionInView>
-                  <div className="static mt-10 md:mt-0 lg:mt-0">
+                  <div className="static">
                     <MotionInView variants={varFadeInRight}>
                       <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10">
                         Input the amount you would like to buy, making sure
