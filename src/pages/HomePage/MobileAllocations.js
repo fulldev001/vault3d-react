@@ -5,31 +5,31 @@ export default function MobileAllocations() {
     <svg viewBox="0 0 183.48 117.74">
       <defs>
         <radialGradient id="paint0_radial_517_379-0" cx="0" cy="0" r="1" gradientTransform="translate(7.9831 5.7087) rotate(17.995) scale(66.276 45.566)" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#7E6A7E" offset=".083333" />
-          <stop stop-color="#D5D5D5" offset=".375" />
-          <stop stop-color="#75888A" offset=".63454" />
-          <stop stop-color="#896753" offset="1" />
+          <stop stopColor="#7E6A7E" offset=".083333" />
+          <stop stopColor="#D5D5D5" offset=".375" />
+          <stop stopColor="#75888A" offset=".63454" />
+          <stop stopColor="#896753" offset="1" />
         </radialGradient>
         <radialGradient id="paint1_angular_517_379-3" cx="0" cy="0" r="1" gradientTransform="translate(39.5 15.5) rotate(90) scale(22.5 39.5)" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#fff" stop-opacity=".72" offset=".046875" />
+          <stop stopColor="#fff" stopOpacity=".72" offset=".046875" />
           <stop offset=".24479" />
-          <stop stop-color="#fff" stop-opacity=".72" offset=".42188" />
+          <stop stopColor="#fff" stopOpacity=".72" offset=".42188" />
           <stop offset=".625" />
-          <stop stop-color="#fff" stop-opacity=".72" offset=".80208" />
+          <stop stopColor="#fff" stopOpacity=".72" offset=".80208" />
           <stop offset="1" />
         </radialGradient>
         <radialGradient id="paint0_radial_517_299-0" cx="0" cy="0" r="1" gradientTransform="translate(6.882 5.7087) rotate(18.211) scale(65.518 45.51)" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#7E6A7E" offset=".083333" />
-          <stop stop-color="#D5D5D5" offset=".375" />
-          <stop stop-color="#75888A" offset=".63454" />
-          <stop stop-color="#896753" offset="1" />
+          <stop stopColor="#7E6A7E" offset=".083333" />
+          <stop stopColor="#D5D5D5" offset=".375" />
+          <stop stopColor="#75888A" offset=".63454" />
+          <stop stopColor="#896753" offset="1" />
         </radialGradient>
         <radialGradient id="paint1_angular_517_299-5" cx="0" cy="0" r="1" gradientTransform="translate(38 15.5) rotate(90) scale(22.5 39)" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#fff" stop-opacity=".72" offset=".046875" />
+          <stop stopColor="#fff" stopOpacity=".72" offset=".046875" />
           <stop offset=".24479" />
-          <stop stop-color="#fff" stop-opacity=".72" offset=".42188" />
+          <stop stopColor="#fff" stopOpacity=".72" offset=".42188" />
           <stop offset=".625" />
-          <stop stop-color="#fff" stop-opacity=".72" offset=".80208" />
+          <stop stopColor="#fff" stopOpacity=".72" offset=".80208" />
           <stop offset="1" />
         </radialGradient>
       </defs>

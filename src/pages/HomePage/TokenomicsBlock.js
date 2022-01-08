@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import {
   MotionInView,
   varFadeInLeft,
@@ -13,6 +13,17 @@ import MobileAllocations from './MobileAllocations';
 import MobileDistributions from './MobileDistribution';
 
 export default function TokenomicsBlock() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    console.log('window.innerWidth', window.innerWidth);
+    console.log('window.innerHeight', window.innerHeight);
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
   return (
     <div id="tokenomics">
       <SectionDark
@@ -30,53 +41,60 @@ export default function TokenomicsBlock() {
                   </MotionInView>
                 </div>
 
+                {
+                  size[0] >= 768 ? (
+                    <div className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20 items-center hidden">
+                      <MotionInView variants={varFadeInLeft}>
+                        <div className="w-full md:flex lg:flex md:justify-center lg:justify-center">
+                          <Allocations />
+                        </div>
+                      </MotionInView>
+                      <MotionInView variants={varFadeInRight}>
+                        <div className="text-white lg:text-2xl md:text-md items-center lg:block md:block">
+                          <p className="mb-10 align-middle">
+                            The marketing wallet is rerouting the 7% marketing tax
+                            into BNB instead of native $VAULT3D tokens before it hits
+                            the marketing wallet.
+                          </p>
+                          <p className="align-middle">
+                            This basically means that the marketing wallet is already
+                            funded without having to sell any native tokens. 40% of
+                            the marketing wallet will always be reserved for
+                            marketing.
+                          </p>
+                        </div>
+                      </MotionInView>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 gap-0 md:gap-10 mt-5 items-center lg:hidden md:hidden">
+                      <MotionInView variants={varFadeInRight}>
+                        <div className="inline-block text-white lg:text-2xl md:text-md items-center">
+                          <p className="mb-5 align-middle">
+                            The marketing wallet is rerouting the 7% marketing tax
+                            into BNB instead of native $VAULT3D tokens before it hits
+                            the marketing wallet.
+                          </p>
+                          <p className="align-middle">
+                            This basically means that the marketing wallet is already
+                            funded without having to sell any native tokens. 40% of
+                            the marketing wallet will always be reserved for
+                            marketing.
+                          </p>
+                        </div>
+                      </MotionInView>
+                      <MotionInView variants={varFadeInLeft}>
+                        <div className="w-full flex md:flex lg:flex justify-center">
+                          <MobileAllocations />
+                        </div>
+                      </MotionInView>
+                    </div>
+                  )
+                }
                 {/* For tablet and desktop */}
-                <div className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20 items-center hidden">
-                  <MotionInView variants={varFadeInLeft}>
-                    <div className="w-full md:flex lg:flex md:justify-center lg:justify-center">
-                      <Allocations />
-                    </div>
-                  </MotionInView>
-                  <MotionInView variants={varFadeInRight}>
-                    <div className="text-white lg:text-2xl md:text-md items-center lg:block md:block">
-                      <p className="mb-10 align-middle">
-                        The marketing wallet is rerouting the 7% marketing tax
-                        into BNB instead of native $VAULT3D tokens before it hits
-                        the marketing wallet.
-                      </p>
-                      <p className="align-middle">
-                        This basically means that the marketing wallet is already
-                        funded without having to sell any native tokens. 40% of
-                        the marketing wallet will always be reserved for
-                        marketing.
-                      </p>
-                    </div>
-                  </MotionInView>
-                </div>
+
 
                 {/* For mobile */}
-                <div className="grid grid-cols-1 gap-0 md:gap-10 mt-5 items-center lg:hidden md:hidden">
-                  <MotionInView variants={varFadeInRight}>
-                    <div className="inline-block text-white lg:text-2xl md:text-md items-center">
-                      <p className="mb-5 align-middle">
-                        The marketing wallet is rerouting the 7% marketing tax
-                        into BNB instead of native $VAULT3D tokens before it hits
-                        the marketing wallet.
-                      </p>
-                      <p className="align-middle">
-                        This basically means that the marketing wallet is already
-                        funded without having to sell any native tokens. 40% of
-                        the marketing wallet will always be reserved for
-                        marketing.
-                      </p>
-                    </div>
-                  </MotionInView>
-                  <MotionInView variants={varFadeInLeft}>
-                    <div className="w-full flex md:flex lg:flex justify-center">
-                      <MobileAllocations />
-                    </div>
-                  </MotionInView>
-                </div>
+
 
                 <div className="grid grid-cols-1 mt-10 md:mt-31 lg:mt-32">
                   <MotionInView variants={varFadeInDown}>
