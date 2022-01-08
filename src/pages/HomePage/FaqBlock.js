@@ -45,28 +45,35 @@ export default function FaqBlock() {
     <div id="faq">
       <SectionDark
         id="faq"
-        yPadding="flex mx-auto pt-20 pb-20 bg-cover md:pb-36 lg:pb-36 md:pt-36 lg:pt-36"
+        yPadding="flex pt-20 pb-20 bg-cover md:pb-36 lg:pb-36 md:pt-18 lg:pt-36"
       >
         <div className="mx-auto container">
           <div className="text-left mb-10 md:mb-20 lg:mb-20">
             <MotionInView variants={varFadeInDown}>
-              <h1 className="text-[60px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+              <h1 className="lg:text-[60px] md:text-[46px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                 F.A.Q
               </h1>
             </MotionInView>
             <MotionInView variants={varFadeInUp}>
-              <p className="text-white text-left text-2xl mt-10">
+              <p className="text-white text-left text-2xl mt-10 md:hidden lg:block">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. <br />
                 Velit officia consequat duis enim velit mollit. Exercitation
                 veniam <br />
                 consequat sunt nostrud amet.
               </p>
+              <p className="text-white text-left text-xl mt-10 md:block lg:hidden">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam
+                consequat sunt nostrud amet.
+              </p>
             </MotionInView>
           </div>
           <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <dl className="max-w-3xl ml-4">
+            <div className="max-w-7xl mx-auto md:px-0 sm:px-6 lg:px-8">
+              <dl className="lg:max-w-3xl md:w-full lg:mx-4 md:mx-0">
                 {faqs.map((faq) => (
                   <MotionInView variants={varFadeInLeft} key={faq.question}>
                     <Disclosure as="div" className="pt-6">
