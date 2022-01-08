@@ -18,7 +18,7 @@ export default function HomePage() {
       <Hero />
       <PanelBlock />
       <StatementBlock />
-      {/* <TokenomicsBlock /> */}
+      <TokenomicsBlock />
       {/* <Roadmap /> */}
       {/* <HowToBuyBlock /> */}
       {/* <OurCoreTeamBlock /> */}
