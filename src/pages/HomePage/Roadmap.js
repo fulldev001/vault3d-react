@@ -46,97 +46,97 @@ export default function Roadmap() {
   return (
     <SectionDark
       id="roadmap"
-      yPadding=" bg-cover py-10 md:py-36 lg:py-36"
+      yPadding=" bg-cover py-10 md:py-18 lg:py-36"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-left">
+        <div className="lg:text-left md:text-center ">
           <MotionInView variants={varFadeInUp}>
-            <h1 className="text-[60px] font-bold mb-0 md:mb-24 lg:mb-24 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+            <h1 className="lg:text-[60px] md:text-[46px] font-bold mb-0 md:mb-24 lg:mb-24 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
               Roadmap
             </h1>
           </MotionInView>
         </div>
         <div className="container">
-          <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row gap-y-16">
+          <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row gap-y-16 gap-x-8">
             <MotionInView variants={varFadeInUp}>
-              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
+              <div className="w-full">
                 <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
                   Q4 2021
                 </h2>
-                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-20">
+                <ul className="inline-block text-left border-b-2 border-solid border-indigo-500 lg:pb-20 md:pb-10">
                   {Q42021.map((item) => (
                     <li
                       key={item.item}
-                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                      className="text-white lg:leading-[90px] md:leading-[50px] lg:text-2xl md:text-md font-semibold bg-list-icon bg-list-icon-size bg-no-repeat pl-10 bg-left-center"
                     >
-                      <span className="pl-7">{item.item}</span>
+                      <span className="lg:pl-7 md:pl-0">{item.item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </MotionInView>
             <MotionInView variants={varFadeInDown}>
-              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] md:noborder lg:noborder mx-auto">
+              <div className="w-full">
                 <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
                   Q1 2022
                 </h2>
 
-                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-20">
+                <ul className="inline-block text-left border-b-2 border-solid border-indigo-500 lg:pb-20 md:pb-10">
                   {Q12022.map((item) => (
                     <li
                       key={item.item}
-                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                      className="text-white lg:leading-[90px] md:leading-[50px] lg:text-2xl md:text-md font-semibold bg-list-icon bg-list-icon-size bg-no-repeat pl-10 bg-left-center"
                     >
-                      <span className="pl-7">{item.item}</span>
+                      <span className="lg:pl-7 md:pl-0">{item.item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </MotionInView>
             <MotionInView variants={varFadeInUp}>
-              <div className="text-center min-w-full md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
+              <div className="w-full">
+                <h2 className="text-2xl text-indigo-700 mb-4 lg:mt-10 md:mt-0 ml-4">
                   Q2 2022
                 </h2>
-                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-20">
+                <ul className="inline-block text-left border-b-2 border-solid border-indigo-500 lg:pb-20 md:pb-10">
                   {Q22022.map((item) => (
                     <li
                       key={item.item}
-                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                      className="text-white lg:leading-[90px] md:leading-[50px] lg:text-2xl md:text-md font-semibold bg-list-icon bg-list-icon-size bg-no-repeat pl-10 bg-left-center"
                     >
-                      <span className="pl-7">{item.item}</span>
+                      <span className="lg:pl-7 md:pl-0">{item.item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </MotionInView>
             <MotionInView variants={varFadeInDown}>
-              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">
+              <div className="w-full">
+                <h2 className="text-2xl text-indigo-700 mb-4 lg:mt-10 md:mt-0 ml-4">
                   Q3 2022
                 </h2>
-                <ul className="inline-block md:min-w-[400px] lg:min-w-[600px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left border-b-2 border-solid border-indigo-500 pb-[10.5rem]">
+                <ul className="inline-block mx-auto text-left border-b-2 border-solid border-indigo-500 lg:pb-[10.5rem] md:pb-[5.5rem]">
                   {Q32022.map((item) => (
                     <li
                       key={item.item}
-                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                      className="text-white lg:leading-[90px] md:leading-[50px] lg:text-2xl md:text-md font-semibold bg-list-icon bg-list-icon-size bg-no-repeat pl-10 bg-left-center"
                     >
-                      <span className="pl-7">{item.item}</span>
+                      <span className="lg:pl-7 md:pl-0">{item.item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </MotionInView>
             <MotionInView variants={varFadeInUp}>
-              <div className="text-center md:min-w-[400px] lg:min-w-[400px] md:max-w-[400px] lg:max-w-[400px] mx-auto">
-                <h2 className="text-2xl text-indigo-700 mb-4 mt-10 ml-4">Q4 2022</h2>
-                <ul className="inline-block md:min-w-[400px] lg:min-w-[700px] md:max-w-[400px] lg:max-w-[400px] mx-auto text-left">
+              <div className="w-full">
+                <h2 className="text-2xl text-indigo-700 mb-4 lg:mt-10 md:mt-0 ml-4">Q4 2022</h2>
+                <ul className="inline-block text-left ">
                   {Q42022.map((item) => (
                     <li
                       key={item.item}
-                      className="text-white leading-[90px] text-2xl font-semibold bg-list-icon bg-no-repeat pl-12 bg-[length:50px] bg-left-center"
+                      className="text-white lg:leading-[90px] md:leading-[50px] lg:text-2xl md:text-md font-semibold bg-list-icon bg-list-icon-size bg-no-repeat pl-10 bg-left-center"
                     >
-                      <span className="pl-7">{item.item}</span>
+                      <span className="lg:pl-7 md:pl-0">{item.item}</span>
                     </li>
                   ))}
                 </ul>

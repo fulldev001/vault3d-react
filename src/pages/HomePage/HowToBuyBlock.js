@@ -18,7 +18,7 @@ export default function HowToBuyBlock() {
           <div className="text-center md:text-right lg:text-right">
             <MotionInView variants={varFadeInDown}>
               <div className="text-outline-right relative" title="How To Buy?">
-                <h1 className="text-[60px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
+                <h1 className="lg:text-[60px] md:text-[46px] font-bold mb-10 md:mb-20 lg:mb-20 text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center relative z-20">
                   How To Buy?
                 </h1>
               </div>

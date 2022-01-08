@@ -138,13 +138,25 @@ h6 {
   .text-outline-right:after {
     content: attr(title);
     position: absolute;
-    top: -8px;
-    right: 12px;
+    top: -4px;
+    right: 8px;
     font-weight: 100;
     color: transparent;
     -webkit-text-stroke: 0.3px #fff;
     z-index: 10;
     font-size: 46px;
     font-family: DrukWide, Trebuchet MS, sans-serif;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-list-icon-size {
+    background-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-list-icon-size {
+    background-size: 50px;
   }
 }
