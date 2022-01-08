@@ -99,6 +99,36 @@ export default function TopHeader() {
                   <Logo />
                 </div>
                 <div className="ml-2 mr-2 flex items-center lg:hidden">
+                  <div className="items-center hidden md:flex lg:flex mr-6">
+                  <div className="flex-shrink-0 flex">
+                    <div className="flex items-center">
+                      {navigation.social.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="bg-indigo-600 hover:bg-indigo-800 mr-4 rounded-full p-1 font-semibold inline-block text-white "
+                        >
+                          <span className="sr-only">{item.name}</span>
+                          <item.icon className="h-8 w-8" aria-hidden="true" />
+                        </a>
+                      ))}
+                    </div>
+
+                    <a href="#how-to-buy">
+                      <button
+                        type="button"
+                        className="relative uppercase text-2xl inline-flex items-center px-6 sm:px-4 lg:px-14 py-2 border border-transparent shadow-sm rounded-3xl bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500 text-[#081312] font-bold"
+                      >
+                        <span>Buy $VAULT</span>
+                      </button>
+                    </a>
+                    {/* <a
+                      href="https://t.me/vault3d"
+                      target="_blank"
+                      rel="noreferrer"
+                    ></a> */}
+                  </div>
+                </div>
                   {/* Mobile menu button */}
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
@@ -122,7 +152,7 @@ export default function TopHeader() {
                   ))}
                 </div>
               </div>
-              <div className="items-center md:flex lg:flex">
+              <div className="items-center hidden lg:flex ">
                 <div className="flex-shrink-0 flex">
                   <div className="flex items-center">
                     {navigation.social.map((item) => (
@@ -173,7 +203,7 @@ export default function TopHeader() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <div class='text-center mx-auto'>
+              <div class='hidden md:block text-center mx-auto'>
                 {navigation.social_mobile.map((item) => (
                   <a
                     key={item.name}
@@ -184,6 +214,36 @@ export default function TopHeader() {
                     <item.icon className="h-8 w-8 text-white" aria-hidden="true" />
                   </a>
                 ))}
+              </div>
+              <div className="items-center md:hidden ">
+                <div className="flex-shrink-0 flex">
+                  <div className="flex items-center justify-center">
+                    {navigation.social.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="bg-indigo-600 hover:bg-indigo-800 mr-4 rounded-full p-1 font-semibold inline-block text-white "
+                      >
+                        <span className="sr-only">{item.name}</span>
+                        <item.icon className="h-8 w-8" aria-hidden="true" />
+                      </a>
+                    ))}
+                  </div>
+
+                  <a href="#how-to-buy">
+                    <button
+                      type="button"
+                      className="relative uppercase text-2xl inline-flex items-center px-6 sm:px-4 lg:px-14 py-2 border border-transparent shadow-sm rounded-3xl bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500 text-[#081312] font-bold"
+                    >
+                      <span>Buy $VAULT</span>
+                    </button>
+                  </a>
+                  {/* <a
+                    href="https://t.me/vault3d"
+                    target="_blank"
+                    rel="noreferrer"
+                  ></a> */}
+                </div>
               </div>
             </div>
           </Disclosure.Panel>

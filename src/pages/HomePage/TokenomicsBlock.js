@@ -9,6 +9,8 @@ import {
 import SectionDark from '../../components/SectionDark';
 import Allocations from './Allocations';
 import Distributions from './Distributions';
+import MobileAllocations from './MobileAllocations';
+import MobileDistributions from './MobileDistribution';
 
 export default function TokenomicsBlock() {
   return (
@@ -31,7 +33,7 @@ export default function TokenomicsBlock() {
                 {/* For tablet and desktop */}
                 <div className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20 items-center hidden">
                   <MotionInView variants={varFadeInLeft}>
-                    <div className="w-full md:flex lg:flex justify-center md:w-auto lg:w-auto">
+                    <div className="w-full flex md:flex lg:flex justify-center">
                       <Allocations />
                     </div>
                   </MotionInView>
@@ -70,8 +72,8 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInLeft}>
-                    <div className="w-full">
-                      <Allocations />
+                    <div className="w-full flex md:flex lg:flex justify-center">
+                      <MobileAllocations />
                     </div>
                   </MotionInView>
                 </div>
@@ -85,8 +87,11 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInUp}>
-                    <div className="lg:mt-20 md:mt-20 mt-10 flex justify-center">
+                    <div className="lg:mt-20 md:mt-20 mt-10 md:block lg:block hidden">
                       <Distributions />
+                    </div>
+                    <div className="lg:mt-20 md:mt-20 mt-10 md:hidden lg:hidden block">
+                      <MobileDistributions />
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInDown}>

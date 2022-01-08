@@ -22,7 +22,7 @@ export default function HomePage() {
       <Roadmap />
       <HowToBuyBlock />
       <OurCoreTeamBlock />
-      {/* <AmbassadorsBlock /> */}
+      <AmbassadorsBlock />
       {/* <FaqBlock /> */}
       {/* <Footer /> */}
     </div>
