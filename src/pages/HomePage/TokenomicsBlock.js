@@ -115,11 +115,9 @@ export default function TokenomicsBlock() {
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInDown}>
-                    <div className="inline-block text-white lg:text-2xl md:text-md align-middle mt-5 md:mt-20 lg:mt-20 md:mx-10 lg:mx-60">
+                    <div className="inline-block text-white lg:text-2xl md:text-md align-middle mt-5 md:mt-20 lg:mt-20 md:mx-10 lg:mx-40">
                       <p className="mb-6 lg:mb-20 md:mb-20 align-middle">
-                        Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor doamet sint. Velit officia consequat duis enim velit
-                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Any unused tokens are to be locked and scheduled for unlocks as they are needed. We are actively working on and dicussing the total distribution and subsequent tokenomics, so these figures may change over the next few days. That said, the entire community will be aware of the final tokenomics before the VAULT3D token launch.
                       </p>
                     </div>
                   </MotionInView>

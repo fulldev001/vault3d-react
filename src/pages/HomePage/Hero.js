@@ -26,14 +26,14 @@ export default function Hero() {
                 <div className="absolute z-20 left-2 top-2 md:left-4 md:top-4 lg:left-4 lg:top-4">
                   <a href="/assets/pdf/VAULT3D-Whitepaper.pdf" target="_blank">
                     <button className="px-6 py-2 md:px-12 md:py-4 lg:px-12 lg:py-4 mt-14 text-lg md:text-3xl lg:text-3xl bg-white bg-steel-button bg-cover bg-center text-black font-bold uppercase focus:shadow-outline hover:bg-indigo-600 hover:text-themePrimaryDark-100">
-                      Start Collect
+                      Start Collecting
                     </button>
                   </a>
                 </div>
                 <div className="absolute z-10">
                   <a href="/assets/pdf/VAULT3D-Whitepaper.pdf" target="_blank">
                     <button className="px-6 py-2 md:px-12 md:py-4 lg:px-12 lg:py-4 mt-14 text-lg md:text-3xl lg:text-3xl bg-transparent text-transparent font-bold uppercase bottom-button-gradient">
-                      Start Collect
+                      Start Collecting
                     </button>
                   </a>
                 </div>
