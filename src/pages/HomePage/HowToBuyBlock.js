@@ -25,7 +25,7 @@ export default function HowToBuyBlock() {
             </MotionInView>
           </div>
           <div className="flex items-end justify-items-end">
-            <div className="md:w-3/5 lg:w-4/5 text-left">
+            <div className="md:w-full lg:w-4/5 text-left">
               <div className="px-6 py-14">
                 <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
                   <MotionInView variants={varFadeInLeft}>
@@ -41,7 +41,7 @@ export default function HowToBuyBlock() {
 
                   <div className="static mt-10 md:mt-0 lg:mt-0">
                     <MotionInView variants={varFadeInRight}>
-                      <p className="text-white text-left text-2xl md:ml-10 lg:ml-10">
+                      <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10">
                         Connect wallet to PancakeSwap, PinkSale, PooCoin, or your
                         favorite DEX service. You will need to be connected to one
                         of these services in order to exchange your BNB or other
@@ -54,7 +54,7 @@ export default function HowToBuyBlock() {
             </div>
           </div>
           <div className="flex items-end justify-items-end">
-            <div className="md:w-3/5 lg:w-4/5 text-left">
+            <div className="md:w-full lg:w-4/5 text-left">
               <div className="px-6 py-14">
                 <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
                   <MotionInView variants={varFadeInLeft}>
@@ -69,7 +69,7 @@ export default function HowToBuyBlock() {
                   </MotionInView>
                   <div className="static mt-10 md:mt-0 lg:mt-0">
                     <MotionInView variants={varFadeInRight}>
-                      <p className="text-white text-left text-2xl md:ml-10 lg:ml-10">
+                      <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10">
                         Add (import) or look up the $VAULTED contract address in
                         your chosen DEX service, and double check to make sure you
                         have the right contract! This page will always show the
@@ -82,7 +82,7 @@ export default function HowToBuyBlock() {
             </div>
           </div>
           <div className="flex items-end justify-items-end">
-            <div className="md:w-3/5 lg:w-4/5 text-left">
+            <div className="md:w-full lg:w-4/5 text-left">
               <div className="px-6 py-14">
                 <div className="md:flex lg:flex md:space-x-8 lg:space-x-8">
                   <MotionInView variants={varFadeInLeft}>
@@ -97,11 +97,11 @@ export default function HowToBuyBlock() {
                   </MotionInView>
                   <div className="static mt-10 md:mt-0 lg:mt-0">
                     <MotionInView variants={varFadeInRight}>
-                      <p className="text-white text-left text-2xl md:ml-10 lg:ml-10">
+                      <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10">
                         Input the amount you would like to buy, making sure
                         $VAULTED populates into the second box.
                       </p>
-                      <p className="text-white text-left text-2xl md:ml-10 lg:ml-10 mt-5">
+                      <p className="text-white text-left lg:text-2xl md:text-lg md:ml-10 lg:ml-10 mt-5">
                         That's it! Just click to swap and you are done. <br />
                         Welcome to VAULT3D!
                       </p>
