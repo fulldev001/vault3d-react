@@ -31,14 +31,14 @@ export default function TokenomicsBlock() {
                 </div>
 
                 {/* For tablet and desktop */}
-                <div className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20 items-center hidden">
+                <div className="lg:grid md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-10 lg:gap-10 lg:mt-20 md:mt-20 items-center hidden">
                   <MotionInView variants={varFadeInLeft}>
-                    <div className="w-full flex md:flex lg:flex justify-center">
+                    <div className="w-full md:flex lg:flex md:justify-center lg:justify-center">
                       <Allocations />
                     </div>
                   </MotionInView>
                   <MotionInView variants={varFadeInRight}>
-                    <div className="inline-block text-white lg:text-2xl md:text-md items-center">
+                    <div className="text-white lg:text-2xl md:text-md items-center lg:block md:block">
                       <p className="mb-10 align-middle">
                         The marketing wallet is rerouting the 7% marketing tax
                         into BNB instead of native $VAULT3D tokens before it hits

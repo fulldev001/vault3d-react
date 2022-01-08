@@ -126,7 +126,7 @@ export default function StatementBlock() {
                 </div>
 
                 {/* Curve grid for mobile */}
-                <div className="block md:hidden lg:hidden">
+                <div className="flex justify-end md:hidden lg:hidden">
                   <MotionInView variants={varFadeInUp}>
                     <img
                       src="/assets/images/green_curve_grid.png"
