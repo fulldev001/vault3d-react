@@ -19,7 +19,7 @@ export default function HomePage() {
       <PanelBlock />
       <StatementBlock />
       <TokenomicsBlock />
-      {/* <Roadmap /> */}
+      <Roadmap />
       {/* <HowToBuyBlock /> */}
       {/* <OurCoreTeamBlock /> */}
       {/* <AmbassadorsBlock /> */}

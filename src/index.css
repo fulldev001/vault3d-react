@@ -177,6 +177,12 @@ h6 {
   }
 }
 
+@media (min-width: 320px) {
+  .bg-list-icon-size {
+    background-size: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .bg-list-icon-size {
     background-size: 30px;
