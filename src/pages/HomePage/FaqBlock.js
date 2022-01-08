@@ -50,19 +50,31 @@ export default function FaqBlock() {
         <div className="mx-auto container">
           <div className="text-left mb-10 md:mb-20 lg:mb-20">
             <MotionInView variants={varFadeInDown}>
-              <h1 className="lg:text-[60px] md:text-[46px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
+              <h1 className="lg:text-[60px] md:text-[46px] text-[28px] font-bold text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center">
                 F.A.Q
               </h1>
             </MotionInView>
             <MotionInView variants={varFadeInUp}>
-              <p className="text-white text-left text-2xl mt-10 md:hidden lg:block">
+              {/* For desktop */}
+              <p className="text-white text-left text-2xl mt-10 md:hidden lg:block hidden">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. <br />
                 Velit officia consequat duis enim velit mollit. Exercitation
                 veniam <br />
                 consequat sunt nostrud amet.
               </p>
-              <p className="text-white text-left text-xl mt-10 md:block lg:hidden">
+
+              {/* For tablet */}
+              <p className="text-white text-left text-xl mt-10 md:block lg:hidden hidden">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation
+                veniam
+                consequat sunt nostrud amet.
+              </p>
+
+              {/* For mobile */}
+              <p className="text-white text-left text-md mt-5 md:hidden lg:hidden block">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint.
                 Velit officia consequat duis enim velit mollit. Exercitation
@@ -82,16 +94,20 @@ export default function FaqBlock() {
                           <dt className="text-lg">
                             <Disclosure.Button className="text-left w-full flex justify-start items-center text-gray-400 mb-4">
                               {open ? (
-                                <img src="/assets/images/minus.png" alt="minus" />
+                                <img 
+                                  src="/assets/images/minus.png" 
+                                  alt="minus" 
+                                  className="lg:w-[30px] md:w-[30px] w-[20px]"
+                                />
                               ) : (
                                 <img
                                   src="/assets/images/plus.png"
                                   alt="plus"
-                                  className="w-[30px] h-[30px]"
+                                  className="lg:w-[30px] md:w-[30px] w-[20px]"
                                 />
                               )}
 
-                              <h2 className="font-bold text-3xl text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center ml-4">
+                              <h2 className="font-bold lg:text-3xl md:text-3xl text-xl text-transparent bg-clip-text inline-block bg-steel-button bg-cover bg-center ml-4">
                                 {faq.question}
                               </h2>
                             </Disclosure.Button>
@@ -106,9 +122,9 @@ export default function FaqBlock() {
                           >
                             <Disclosure.Panel
                               as="dd"
-                              className="ml-12 mt-2 pr-12 pb-10"
+                              className="lg:ml-12 md:ml-12 ml-0 mt-2 pr-12 pb-10"
                             >
-                              <p className="text-2xl text-indigo-500">
+                              <p className="lg:text-2xl md:text-2xl text-md text-indigo-500">
                                 {faq.answer}
                               </p>
                             </Disclosure.Panel>
