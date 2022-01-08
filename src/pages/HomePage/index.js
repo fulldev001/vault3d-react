@@ -16,7 +16,7 @@ export default function HomePage() {
     <div className="antialiased text-gray-600">
       <TopHeader />
       <Hero />
-      {/* <PanelBlock /> */}
+      <PanelBlock />
       {/* <StatementBlock /> */}
       {/* <TokenomicsBlock /> */}
       {/* <Roadmap /> */}
