@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useState, useEffect } from 'react';
 import {
   MotionInView,
   varFadeInLeft,
@@ -14,9 +14,11 @@ import MobileDistributions from './MobileDistribution';
 
 export default function TokenomicsBlock() {
   const [size, setSize] = useState([0, 0]);
+  useEffect(() => {
+    setSize([window.innerWidth, window.innerHeight]);
+  }, []);
+
   useLayoutEffect(() => {
-    console.log('window.innerWidth', window.innerWidth);
-    console.log('window.innerHeight', window.innerHeight);
     function updateSize() {
       setSize([window.innerWidth, window.innerHeight]);
     }
