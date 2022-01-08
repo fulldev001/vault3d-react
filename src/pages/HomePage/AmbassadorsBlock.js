@@ -19,7 +19,7 @@ export default function AmbassadorsBlock() {
           </div>
           <div>
             <MotionInView variants={varFadeInUp}>
-              <div className="grid md:grid-cols-3 xs:grid-cols-1 grid-flow-row mt-[86px] gap-y-16">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 grid-flow-row mt-[86px] gap-y-16">
                 <div className="flex justify-center items-center">
                   <img
                     src="/assets/images/ambassador_avatar.png"
@@ -43,6 +43,28 @@ export default function AmbassadorsBlock() {
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
+                  <img
+                    src="/assets/images/ambassador_avatar.png"
+                    className="w-[100px] h-[100px]"
+                    alt="member 1"
+                  />
+                  <div className="ml-8">
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center lg:hidden">
+                  <img
+                    src="/assets/images/ambassador_avatar.png"
+                    className="w-[100px] h-[100px]"
+                    alt="member 1"
+                  />
+                  <div className="ml-8">
+                    <p className="text-4xl text-indigo-600 font-bold">Rich</p>
+                    <p className="text-3xl text-white">Co-Founder</p>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center lg:hidden">
                   <img
                     src="/assets/images/ambassador_avatar.png"
                     className="w-[100px] h-[100px]"
@@ -56,7 +78,7 @@ export default function AmbassadorsBlock() {
               </div>
             </MotionInView>
             <MotionInView variants={varFadeInDown}>
-              <div className="grid md:grid-cols-2 xs:grid-cols-1 grid-flow-row mt-[86px] gap-y-16">
+              <div className="lg:grid lg:grid-cols-2 xs:grid-cols-1 grid-flow-row mt-[86px] gap-y-16 md:hidden">
                 <div className="flex justify-center items-center">
                   <img
                     src="/assets/images/ambassador_avatar.png"
