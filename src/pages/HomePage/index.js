@@ -24,7 +24,7 @@ export default function HomePage() {
       <OurCoreTeamBlock />
       <AmbassadorsBlock />
       <FaqBlock />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
